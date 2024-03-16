@@ -9,12 +9,14 @@ import Button from "../components/Button.astro";
       class="flex flex-col justify-center items-center p-12 text-white w-96 rounded-2xl shadow-md backdrop-blur-lg backdrop-filter border border-white"
     >
       <img
-        class="w-32 h-32 rounded-full object-cover border-2 border-white"
+        class="w-32 h-32 rounded-full object-cover border-2 border-white mb-3"
         src="/profile.png"
         alt="Profile Picture"
       />
-      <h1>&lt;7R0N1X/&gt;</h1>
-      <p>Ing. Sistemas de Información</p>
+      <h1 class="text-2xl font-bold">
+        <span>&lt;7R0N1X/&gt;</span>
+      </h1>
+      <p class="text-md">Ing. Sistemas de Información</p>
 
       <Button href="#" name="Libros" />
       <Button href="#" name="Github" />
@@ -22,3 +24,30 @@ import Button from "../components/Button.astro";
     </div>
   </main>
 </Layout>
+
+<style>
+  @import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap");
+  span {
+    display: block;
+    font-family: "Source Code Pro", monospace;
+    white-space: nowrap;
+    border-right: 2px solid;
+    width: 9.2ch;
+    animation:
+      typing 2s steps(9),
+      blink 0.5s infinite step-end alternate;
+    overflow: hidden;
+  }
+
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+  }
+
+  @keyframes blink {
+    50% {
+      border-color: transparent;
+    }
+  }
+</style>
