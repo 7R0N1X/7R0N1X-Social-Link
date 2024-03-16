@@ -2,9 +2,10 @@
 interface Props {
   href: string;
   type: string;
+  name: string;
 }
 
-const { href, type } = Astro.props;
+const { href, type, name } = Astro.props;
 ---
 
-<a href={href} target="_blank" class="ml-1 hover:animate-blurred-fade-in"><i class={`text-xl ${type}`}></i></a>
+<a href={href} target="_blank" aria-label={name} class="ml-1 hover:animate-blurred-fade-in"><i class={`text-xl ${type}`}></i></a>
