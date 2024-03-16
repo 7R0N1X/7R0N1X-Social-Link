@@ -1,5 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import Icon from "../components/Icon.astro";
 import Button from "../components/Button.astro";
 ---
 
@@ -17,13 +18,21 @@ import Button from "../components/Button.astro";
         <span>&lt;7R0N1X/&gt;</span>
       </h1>
       <p class="text-md">Ing. Sistemas de Información</p>
-
+      <div class="mt-2 mb-2">
+        <Icon href="https://www.linkedin.com/in/ing-eduardomolina" type="bi bi-linkedin" />
+        <Icon href="https://ko-fi.com/7r0n1x" type="bi bi-cup-hot-fill" />
+        <Icon href="https://www.tiktok.com/@tronix.dev" type="bi bi-tiktok" />
+        <Icon href="https://www.instagram.com/tronix.dev" type="bi bi-instagram" />
+      </div>
       <Button
         href="https://drive.google.com/drive/folders/1tfxUYQqnD9jzYepBrcwfEIYuGlpwB1RE?usp=sharing"
         name="Libros"
       />
       <Button href="https://github.com/7R0N1X" name="Github" />
-      <Button href="https://open.spotify.com/playlist/404JI87iaaFIisHJscuot8?si=47c26afacc7e4b01" name="Developer Mode" />
+      <Button
+        href="https://open.spotify.com/playlist/404JI87iaaFIisHJscuot8?si=47c26afacc7e4b01"
+        name="Developer Mode"
+      />
       <Button href="mailto:info.tronix.dev@gmail.com" name="Contáctame" />
     </div>
   </main>
