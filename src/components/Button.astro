@@ -11,10 +11,9 @@ const { name, href, icon } = Astro.props;
 <a
   href={href}
   target="_blank"
-  class="flex justify-center items-center w-full bg-[#0a0a0a] text-white py-3 my-2 px-4 cursor-pointer rounded-md hover:bg-[#141414]"
+  class="flex items-center w-full border bg-[#0a0a0a00] text-white py-3 my-2 px-4 cursor-pointer rounded-md transition ease-in-out hover:bg-[#141414]"
 >
   <svg
-    class="mr-2"
     xmlns="http://www.w3.org/2000/svg"
     width="20"
     height="20"
@@ -23,5 +22,5 @@ const { name, href, icon } = Astro.props;
   >
     <path d={icon}></path>
   </svg>
-  <span class="">{name}</span>
+  <span class="flex-1 text-center">{name}</span>
 </a>
