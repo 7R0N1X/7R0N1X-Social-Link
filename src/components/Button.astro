@@ -10,7 +10,7 @@ const { name, href } = Astro.props;
 <a
   href={href}
   target="_blank"
-  class="flex justify-center items-center w-full border bg-[#0a0a0a00] text-white text-center py-3 my-3 px-4 cursor-pointer rounded-md transition ease-in-out hover:bg-[#141414]"
+  class="flex justify-center items-center w-full border bg-[#0a0a0a00] text-white text-center py-3 my-3 px-4 cursor-pointer rounded-md max-sm:rounded-none transition ease-in-out hover:backdrop-blur-[2px]"
 >
   <slot />
   <span class="flex-1">{name}</span>
