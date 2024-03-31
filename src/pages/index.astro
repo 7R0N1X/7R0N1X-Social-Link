@@ -1,10 +1,7 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import IconContainer from "../components/IconContainer.astro";
 import LinkedInIcon from "../icons/LinkedIn.astro";
 import GithubIcon from "../icons/Github.astro";
-import TiktokIcon from "../icons/Tiktok.astro";
-import InstagramIcon from "../icons/Instagram.astro";
 import BookIcon from "../icons/Book.astro";
 import SpotifyIcon from "../icons/Spotify.astro";
 import Mail from "../icons/Mail.astro";
@@ -15,7 +12,7 @@ import Button from "../components/Button.astro";
   <main class="h-screen w-screen flex flex-col justify-center items-center">
     <div class="absolute top-0 left-0 w-screen h-screen bg-[#000000c5]"></div>
     <div
-      class="bg-[#00000046] max-sm:bg-transparent flex flex-col justify-center items-center p-12 text-white w-96 max-sm:w-screen max-sm:h-screen max-sm:border-none rounded-2xl border border-white z-10"
+      class="max-sm:bg-transparent flex flex-col justify-center items-center text-white w-96 max-sm:w-screen max-sm:h-screen max-sm:px-8 z-10"
     >
       <h1 class="text-2xl font-bold">
         <span>&lt;7R0N1X/&gt;</span>
@@ -23,55 +20,35 @@ import Button from "../components/Button.astro";
       <p class="text-md mt-2 mb-6">Descubriendo el mundo 🇪🇨</p>
 
       <!-- Botones -->
-      <section class="w-full relative">
+      <section class="w-full relative flex flex-col gap-3">
         <Button
           href="https://drive.google.com/drive/folders/1tfxUYQqnD9jzYepBrcwfEIYuGlpwB1RE?usp=sharing"
           name="Libros"
-          ><BookIcon class="absolute left-4 size-6" />
+          ><BookIcon class="absolute left-5 size-6" />
+        </Button>
+
+        <Button
+          href="https://open.spotify.com/playlist/404JI87iaaFIisHJscuot8?si=47c26afacc7e4b01"
+          name="Playlist"
+          ><SpotifyIcon class="absolute left-5 size-6" />
         </Button>
 
         <Button 
           href="https://github.com/7R0N1X"
           name="Github"
-          ><GithubIcon class="absolute left-4 size-6" /></Button
+          ><GithubIcon class="absolute left-5 size-6" /></Button
         >
 
         <Button
-          href="https://open.spotify.com/playlist/404JI87iaaFIisHJscuot8?si=47c26afacc7e4b01"
-          name="Playlist"
-          ><SpotifyIcon class="absolute left-4 size-6" />
-        </Button>
+          href="https://www.linkedin.com/in/ing-eduardomolina"
+          name="LinkedIn">
+          <LinkedInIcon class="absolute left-5 size-6" /></Button>
 
         <Button
           href="mailto:info.tronix.dev@gmail.com"
           name="Contáctame"
-          ><Mail class="absolute left-4 size-6" /></Button
+          ><Mail class="absolute left-5 size-6" /></Button
         >
-      </section>
-
-      <!-- Icons -->
-      <section class="flex gap-3 justify-center mt-3 mb-3 w-full text-white">
-        <IconContainer
-          href="https://www.linkedin.com/in/ing-eduardomolina"
-          ariaLabel="LinkedIn"
-          ><LinkedInIcon class="size-5" />
-        </IconContainer>
-
-        <IconContainer href="https://github.com/7R0N1X" ariaLabel="Github"
-          ><GithubIcon class="size-5" />
-        </IconContainer>
-
-        <IconContainer
-          href="https://www.tiktok.com/@tronix.dev"
-          ariaLabel="Tiktok"
-          ><TiktokIcon class="size-5" />
-        </IconContainer>
-
-        <IconContainer
-          href="https://www.instagram.com/tronix.dev"
-          ariaLabel="Instagram"
-          ><InstagramIcon class="size-5" />
-        </IconContainer>
       </section>
     </div>
   </main>
