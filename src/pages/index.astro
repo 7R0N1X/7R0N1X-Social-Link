@@ -15,7 +15,7 @@ import Button from "../components/Button.astro";
   <main class="h-screen w-screen flex flex-col justify-center items-center">
     <div class="absolute top-0 left-0 w-screen h-screen bg-[#000000c5]"></div>
     <div
-      class=" bg-[#00000046] max-sm:bg-transparent flex flex-col justify-center items-center p-12 text-white w-96 max-sm:w-screen max-sm:h-screen max-sm:border-none rounded-2xl border border-white z-10"
+      class="bg-[#00000046] max-sm:bg-transparent flex flex-col justify-center items-center p-12 text-white w-96 max-sm:w-screen max-sm:h-screen max-sm:border-none rounded-2xl border border-white z-10"
     >
       <h1 class="text-2xl font-bold">
         <span>&lt;7R0N1X/&gt;</span>
@@ -23,25 +23,29 @@ import Button from "../components/Button.astro";
       <p class="text-md mt-2 mb-6">Descubriendo el mundo 🇪🇨</p>
 
       <!-- Botones -->
-      <section class="w-full">
+      <section class="w-full relative">
         <Button
           href="https://drive.google.com/drive/folders/1tfxUYQqnD9jzYepBrcwfEIYuGlpwB1RE?usp=sharing"
           name="Libros"
-          ><BookIcon class="size-6" />
+          ><BookIcon class="absolute left-4 size-6" />
         </Button>
 
-        <Button href="https://github.com/7R0N1X" name="Github"
-          ><GithubIcon class="size-6" /></Button
+        <Button 
+          href="https://github.com/7R0N1X"
+          name="Github"
+          ><GithubIcon class="absolute left-4 size-6" /></Button
         >
 
         <Button
           href="https://open.spotify.com/playlist/404JI87iaaFIisHJscuot8?si=47c26afacc7e4b01"
           name="Playlist"
-          ><SpotifyIcon class="size-6" />
+          ><SpotifyIcon class="absolute left-4 size-6" />
         </Button>
 
-        <Button href="mailto:info.tronix.dev@gmail.com" name="Contáctame"
-          ><Mail class="size-6" /></Button
+        <Button
+          href="mailto:info.tronix.dev@gmail.com"
+          name="Contáctame"
+          ><Mail class="absolute left-4 size-6" /></Button
         >
       </section>
 
@@ -74,7 +78,7 @@ import Button from "../components/Button.astro";
 </Layout>
 
 <style>
-  main{
+  main {
     background: url("/background.webp") no-repeat center/cover;
   }
 </style>
